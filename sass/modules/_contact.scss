@@ -26,11 +26,16 @@
     margin-bottom: 32px;
 
     @media (max-width: 750px) {
-      margin-top: 36px;
+      margin-top: 0px;
       margin-bottom: 0px;
-      height: 200px;
-      background-position: left;
-      background-size: cover;
+      height: 100px;
+      // background-position: right;
+      // background-image: url('/assets/cover-mobile-test.png');
+      // background-size: 100%;
+
+      background: $color-primary;
+
+
     }
 
     .contact-h1{
@@ -38,6 +43,9 @@
       font-size: 72px;
       font-weight: 700;
       mix-blend-mode: difference;
+      @media (max-width: 750px) {
+        mix-blend-mode: normal;
+      }
     }
   }
 
@@ -55,16 +63,16 @@
     @media (max-width: 750px) {
       width: $large-container;
 
-      &::before{
-        background-color: $color-primary;
-        display: block;
-        content: "";
-        width: 6px;
-        height: 40%;
-        position: absolute;
-        top: -90%;
-        right: 2%;
-      }
+      // &::before{
+      //   background-color: $color-primary;
+      //   display: block;
+      //   content: "";
+      //   width: 6px;
+      //   height: 40%;
+      //   position: absolute;
+      //   top: -90%;
+      //   right: 2%;
+      // }
     }
 
 

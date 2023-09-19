@@ -5,6 +5,10 @@
   position: relative;
   margin-top: 96px;
 
+  @media (max-width: 750px) {
+    margin-top: 46px;
+  }
+
   .cv-img-bg{
     position: absolute;
     z-index: 0;

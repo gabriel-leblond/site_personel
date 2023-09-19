@@ -429,6 +429,11 @@ footer div {
   position: relative;
   margin-top: 96px;
 }
+@media (max-width: 750px) {
+  .cv {
+    margin-top: 46px;
+  }
+}
 .cv .cv-img-bg {
   position: absolute;
   z-index: 0;
@@ -520,11 +525,10 @@ footer div {
 }
 @media (max-width: 750px) {
   .contact .box-h1-contact {
-    margin-top: 36px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    height: 200px;
-    background-position: left;
-    background-size: cover;
+    height: 100px;
+    background: #0238ea;
   }
 }
 .contact .box-h1-contact .contact-h1 {
@@ -532,6 +536,11 @@ footer div {
   font-size: 72px;
   font-weight: 700;
   mix-blend-mode: difference;
+}
+@media (max-width: 750px) {
+  .contact .box-h1-contact .contact-h1 {
+    mix-blend-mode: normal;
+  }
 }
 .contact .content {
   width: 70%;
@@ -548,16 +557,6 @@ footer div {
 @media (max-width: 750px) {
   .contact .content {
     width: 90%;
-  }
-  .contact .content::before {
-    background-color: #0238ea;
-    display: block;
-    content: "";
-    width: 6px;
-    height: 40%;
-    position: absolute;
-    top: -90%;
-    right: 2%;
   }
 }
 .contact .content .box-btn-contact {
