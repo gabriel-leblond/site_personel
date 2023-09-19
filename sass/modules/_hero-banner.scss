@@ -1,0 +1,53 @@
+.hero-banner{
+  background-image: url('/assets/TOP-COVER-GABRIEL-LEBLOND-FULLSTACK-DEVELOPER-BORDEAUX\ \(3\).png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 50px;
+  padding: 32px 0 32px 0;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 750px) {
+    margin-top: 0px;
+    align-items: center;
+    height: 50vh;
+    padding: 0;
+  }
+
+  .content{
+    width: $small-container;
+    @media (max-width: 1000px) {
+      width: $medium-container;
+    }
+    @media (max-width: 750px) {
+      width: $large-container;
+    }
+
+    h1{
+      font-size: 8vw;
+      color: $color-white;
+      animation: fadeInLeft;
+      animation-duration: 0.6s;
+      @media (max-width: 750px) {
+        font-size: 11vw;
+      }
+    }
+
+    .gabriel{
+      mix-blend-mode: difference;
+      font-weight: 700;
+    }
+
+    .fullstack{
+      color: $color-primary;
+      font-weight: 200;
+    }
+
+    .graphic{
+      mix-blend-mode: difference;
+      font-weight: 200;
+    }
+
+  }
+}

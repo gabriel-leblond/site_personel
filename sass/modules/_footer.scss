@@ -1,0 +1,27 @@
+footer{
+  height: 60px;
+  border-top: solid 2px $color-primary;
+  color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+
+  div{
+    width: $small-container;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1000px) {
+      width: $medium-container;
+    }
+    @media (max-width: 750px) {
+      width: $large-container;
+      font-size: 0.7em;
+      justify-content: center;
+
+    }
+  }
+
+
+
+}

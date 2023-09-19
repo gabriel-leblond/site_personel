@@ -1,0 +1,110 @@
+.bio{
+  // outline: 2px solid red;
+  width: 100%;
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  background-color: $color-white;
+  @media (max-width: 750px) {
+    margin-top: 16px;
+  }
+
+
+  .content{
+    width: $small-container;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    animation: fadeInRight;
+    animation-duration: 0.6s;
+
+    @media (max-width: 1000px) {
+      width: $medium-container;
+      flex-direction: column;
+    }
+
+    position: relative;
+
+    @media (max-width: 750px) {
+      width: $large-container;
+      align-items: flex-end;
+      &::before{
+        background-color: $color-primary;
+        display: block;
+        content: "";
+        width: 6px;
+        height: 30%;
+        position: absolute;
+        top: -10%;
+        left: 2%;
+      }
+    }
+
+
+    .profil-picture{
+
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      position: relative;
+
+      @media (max-width: 1200px) {
+        width: 300px;
+        height: 300px;
+      }
+
+      @media (max-width: 1000px) {
+        width: 80%;
+        height: 80%;
+      }
+
+    }
+
+
+
+    .bio-box{
+      padding-top: 96px;
+      @media (max-width: 1000px) {
+        padding-top: 0px;
+      }
+
+      @media (max-width: 750px) {
+        margin-top: -16px;
+      }
+
+      .hello{
+        font-size: 72px;
+        font-weight: 700;
+        mix-blend-mode: difference;
+        color: $color-white;
+        margin-left: 5%;
+        @media (max-width: 750px) {
+          font-size: 46px;
+          height: 84px;
+        }
+      }
+
+      .hello-img{
+        height: 100px;
+        background-image: url('/assets/BOTTOM-COVER-GABRIEL-LEBLOND-FULLSTACK-DEVELOPER-BORDEAUX\ \(2\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        margin-top: -50px;
+
+
+      }
+
+      .desc{
+        width: 90%;
+        padding: 16px;
+        margin-bottom: 32px;
+        background-color: $color-white;
+        // outline: greenyellow 2px solid;
+        margin-left: 5%;
+        margin-top: -50px;
+      }
+    }
+  }
+}

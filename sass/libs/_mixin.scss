@@ -1,0 +1,79 @@
+@mixin btn-base($bg-color, $color, $shadow-o) {
+  border-radius: $shape-radius;
+  border: 2px solid $bg-color;
+  cursor: pointer;
+  padding: em(10) em(15);
+  background-color: $bg-color;
+  color: $color;
+  box-shadow: rgba(99, 99, 99, $shadow-o) 0px 2px 8px 0px;
+  font-weight: 500;
+
+  &:hover {
+    background: darken($bg-color, 10);
+    border-color: darken($bg-color, 10);
+  }
+  &:active {
+    background: lighten($bg-color, 10);
+    border-color: lighten($bg-color, 10);
+  }
+}
+
+@mixin btn-base-outline($border-color, $bg-color, $color, $shadow-o) {
+  border-radius: $shape-radius;
+  border: 2px solid $border-color;
+  cursor: pointer;
+  padding: em(10) em(15);
+  box-shadow: rgba(99, 99, 99, $shadow-o) 0px 2px 8px 0px;
+  color: $color;
+  background: $bg-color;
+  font-weight: 500;
+
+  &:hover {
+    border-color: darken($border-color, 10);
+    color: darken($color, 10);
+  }
+  &:active {
+    border-color: lighten($border-color, 10);
+    color: lighten($color, 10);
+  }
+}
+
+@mixin transform($transform) {
+  transform: $transform;
+  -ms-transform: $transform;
+  -webkit-transform: $transform;
+  -o-transform: $transform;
+  -moz-transform: $transform;
+}
+
+@mixin rotate($rotation: 10deg) {
+  @include transform(rotate($rotation));
+}
+
+// DINMIC UDERLINE --------------------- START
+
+// .dynamic-underline {
+//   display: inline;
+//   cursor: pointer;
+//   position: relative;
+// }
+
+// .dynamic-underline::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: em(26);
+//   height: em(2);
+//   width: 100%;
+//   background: lighten($color-almost-black, 60);
+//   transform: scaleX(0);
+//   transition: transform 0.3s ease-in-out;
+//   transform-origin: right;
+// }
+
+// .dynamic-underline:hover::before {
+//   transform: scaleX(1);
+//   transform-origin: left;
+// }
+
+// DINMIC UDERLINE --------------------- END

@@ -1,0 +1,71 @@
+.cv{
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 96px;
+
+  .cv-img-bg{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url('/assets/CENTER-COVER-GABRIEL-LEBLOND-FULLSTACK-DEVELOPER-BORDEAUX\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    @media (max-width: 750px) {
+      top: 0;
+      background-position: bottom;
+    }
+
+  }
+
+  .content{
+    z-index: 100;
+    width: $small-container;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @media (max-width: 1000px) {
+      width: $medium-container;
+    }
+    @media (max-width: 750px) {
+      width: $large-container;
+    }
+    animation: fadeInLeft;
+    animation-duration: 0.6s;
+
+    .box-h1-btn{
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: -46px;
+
+      .cv-h1{
+        color: $color-black;
+        font-size: 72px;
+        font-weight: 700;
+        mix-blend-mode: difference;
+        @media (max-width: 750px) {
+          font-size: 46px;
+        }
+      }
+
+      #btnDownload{
+        margin-bottom: 0px;
+      }
+
+    }
+
+    .cv-picture{
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      margin-top: -16px;
+    }
+
+  }
+
+}

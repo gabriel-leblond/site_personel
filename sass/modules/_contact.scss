@@ -1,0 +1,235 @@
+.contact{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 66px;
+  padding-bottom: 72px;
+  @media (max-width: 750px) {
+    padding-bottom: 64px;
+  }
+
+  .box-h1-contact{
+
+    width: 100%;
+    height: 100px;
+    background-image: url('/assets/CENTER-COVER-GABRIEL-LEBLOND-FULLSTACK-DEVELOPER-BORDEAUX\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @media (max-width: 750px) {
+      margin-top: 36px;
+      margin-bottom: 0px;
+      height: 200px;
+      background-position: left;
+      background-size: cover;
+    }
+
+    .contact-h1{
+      color: $color-white;
+      font-size: 72px;
+      font-weight: 700;
+      mix-blend-mode: difference;
+    }
+  }
+
+  .content{
+    width: $small-container;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    position: relative;
+
+    @media (max-width: 1000px) {
+      width: $medium-container;
+    }
+    @media (max-width: 750px) {
+      width: $large-container;
+
+      &::before{
+        background-color: $color-primary;
+        display: block;
+        content: "";
+        width: 6px;
+        height: 40%;
+        position: absolute;
+        top: -90%;
+        right: 2%;
+      }
+    }
+
+
+
+
+
+    .box-btn-contact{
+      text-decoration: none;
+      height: 6em;
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+      }
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+      @media (max-width: 1000px) {
+        height: 4em;
+      }
+
+      i{
+        font-size: 3vw;
+        color: $color-primary;
+        @media (max-width: 750px) {
+          font-size: 6vw;
+        }
+      }
+
+      p{
+        font-size: 2vw;
+        color: $color-primary;
+        font-weight: 700;
+        font-style: italic;
+        @media (max-width: 750px) {
+          font-size: 3vw;
+        }
+      }
+
+      &:hover{
+        background-color: $color-primary;
+        i{
+          color: $color-white;
+        }
+        p{
+          color: $color-white;
+        }
+      }
+
+    }
+
+    .contact-direct{
+      display: flex;
+      gap: 32px;
+      animation: fadeInLeft;
+      animation-duration: 0.6s;
+
+      .blue{
+        background-color: $color-primary;
+        i{
+          color: $color-white;
+        }
+        p{
+          color: $color-white;
+        }
+
+        &:hover{
+          background-color: $color-white;
+          i{
+            color: $color-primary;
+          }
+          p{
+            color: $color-primary;
+          }
+        }
+
+      }
+
+    }
+
+    .box-network-info{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 32px;
+      animation: pulse;
+      animation-duration: 0.6s;
+      animation-delay: 0.4s;
+
+      @media (max-width: 750px) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      .contact-network{
+        display: flex;
+        gap: 16px;
+        @media (max-width: 750px) {
+          gap: 32px;
+        }
+
+        .network{
+          height: 50px;
+          background-color: $color-black;
+          @media (max-width: 750px) {
+            height: 4em;
+          }
+
+          i{
+            color: $color-white;
+            font-size: 24px;
+          }
+          &:hover{
+            background-color: $color-white;
+            i{
+              color: $color-black;
+            }
+          }
+        }
+      }
+
+      .contact-info{
+
+
+        h2{
+          font-weight: 700;
+          font-size: 2.5em;
+          margin-bottom: 16px;
+          position: relative;
+          // @media (max-width: 750px) {
+          //   height: 4em;
+          // }
+          &::after{
+            display: block;
+            content: "";
+            background-color: $color-primary;
+            width: 40%;
+            height: 4px;
+            position: absolute;
+            bottom: -8px;
+
+          }
+        }
+
+        p{
+          font-size: 1.15em;
+        }
+
+
+      }
+    }
+
+
+
+
+  }
+
+
+}

@@ -1,0 +1,22 @@
+// Small devices (landscape phones, 576px and up)
+$small: 576px !default;
+// Medium devices (tablets, 768px and up)
+$medium: 768px !default;
+// Large devices (desktops, 992px and up)
+$large: 992px !default;
+// X-Large devices (large desktops, 1200px and up)
+$xlarge: 1200px !default;
+// XX-Large devices (larger desktops, 1400px and up)
+$xxlarge: 1400px !default;
+// For mobile firt
+$small-up: "only screen and (min-width: #{$small})";
+$medium-up: "only screen and (min-width: #{$medium})";
+$large-up: "only screen and (min-width: #{$large})";
+$xlarge-up: "only screen and (min-width: #{$xlarge})";
+$xxlarge-up: "only screen and (min-width: #{$xxlarge})";
+// For desktops firt
+$small-down: "only screen and (max-width: #{$small})";
+$medium-down: "only screen and (max-width: #{$medium})";
+$large-down: "only screen and (max-width: #{$large})";
+$xlarge-down: "only screen and (max-width: #{$xlarge})";
+$xxlarge-down: "only screen and (max-width: #{$xxlarge})";
