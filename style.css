@@ -175,6 +175,11 @@ footer {
   align-items: center;
   margin-top: 0px;
 }
+@media (max-width: 750px) {
+  footer {
+    border: none;
+  }
+}
 footer div {
   width: 70%;
   display: flex;
@@ -414,6 +419,11 @@ footer div {
   background-attachment: fixed;
   margin-top: -50px;
 }
+@media (max-width: 750px) {
+  .bio .content .bio-box .hello-img {
+    background-position: top;
+  }
+}
 .bio .content .bio-box .desc {
   width: 90%;
   padding: 16px;
@@ -448,7 +458,6 @@ footer div {
 @media (max-width: 750px) {
   .cv .cv-img-bg {
     top: 0;
-    background-position: bottom;
   }
 }
 .cv .content {
@@ -600,7 +609,7 @@ footer div {
 }
 @media (max-width: 750px) {
   .contact .content .box-btn-contact p {
-    font-size: 3vw;
+    display: none;
   }
 }
 .contact .content .box-btn-contact:hover {

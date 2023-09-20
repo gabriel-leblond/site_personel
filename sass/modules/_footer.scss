@@ -6,6 +6,9 @@ footer{
   justify-content: center;
   align-items: center;
   margin-top: 0px;
+  @media (max-width: 750px) {
+    border: none;
+  }
 
   div{
     width: $small-container;
@@ -18,7 +21,6 @@ footer{
       width: $large-container;
       font-size: 0.7em;
       justify-content: center;
-
     }
   }
 
