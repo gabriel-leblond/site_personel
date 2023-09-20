@@ -519,6 +519,7 @@ footer div {
 @media (max-width: 750px) {
   .contact {
     padding-bottom: 64px;
+    min-height: 60vh;
   }
 }
 .contact .box-h1-contact {
