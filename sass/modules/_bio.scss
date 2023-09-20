@@ -33,9 +33,9 @@
         display: block;
         content: "";
         width: 6px;
-        height: 30%;
+        height: 25%;
         position: absolute;
-        top: -10%;
+        top: -7%;
         left: 2%;
       }
     }
@@ -79,8 +79,10 @@
         color: $color-white;
         margin-left: 5%;
         @media (max-width: 750px) {
+          mix-blend-mode: normal;
           font-size: 46px;
-          height: 84px;
+          height: 56px;
+          color: white;
         }
       }
 
@@ -94,7 +96,7 @@
         margin-top: -50px;
 
         @media (max-width: 750px) {
-          background-position: top;
+          background: $color-primary;
         }
 
 
